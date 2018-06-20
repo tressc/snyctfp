@@ -1,3 +1,9 @@
+# using Ruby's native sort_by
+def sort_by_strings(s, t)
+  s.chars.sort_by { |ch| t.index(ch) }.join
+end
+
+# using bubble-sort
 def sort_by_strings(s, t)
   sorted = false
   until sorted
